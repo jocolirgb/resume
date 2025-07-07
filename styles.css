@@ -36,13 +36,19 @@ ul li {
   margin-bottom: 0.25rem;
 }
 
-.icons {
-  gap: 0.25rem;
+.icon-row {
+  gap: 0.5rem;
   align-items: center;
+  display: flex;
+}
+
+.icons {
+  width: 1.25rem;
 }
 
 #contact {
   width: 35%;
+  padding: 0.25rem 0.1rem;
 }
 
 #profile {
@@ -60,7 +66,7 @@ ul li {
 .card {
   background-color: var(--card-bg);
   width: 100%;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0.1rem;
   border-radius: 0.3rem;
   margin: 0.5rem 0;
 }
