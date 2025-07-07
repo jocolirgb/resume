@@ -23,6 +23,24 @@ h1 {
   text-align: center;
 }
 
+a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin-bottom: 0.25rem;
+}
+
+.icons {
+  gap: 0.25rem;
+  align-items: center;
+}
+
 #contact {
   width: 35%;
 }
@@ -42,8 +60,9 @@ h1 {
 .card {
   background-color: var(--card-bg);
   width: 100%;
-  padding: 0.25rem 2rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 0.3rem;
+  margin: 0.5rem 0;
 }
 
 .flex {
@@ -52,4 +71,35 @@ h1 {
 
 .flex-row {
   flex-direction: row;
+}
+
+.stretch {
+  align-items: stretch;
+}
+
+.gap {
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .flex-row {
+    flex-direction: column;
+  }
+  body {
+    width: 90%;
+    margin: 1rem auto;
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    overflow-wrap: anywhere;
+  }
+  .card {
+    padding: 2px 4px;
+    margin: 2px 0;
+  }
+  .gap {
+    gap: 0;
+  }
+  #contact,
+  #profile {
+    width: 100%;
+  }
 }
