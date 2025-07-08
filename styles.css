@@ -123,9 +123,16 @@ ul li {
   flex: 2;
 }
 
-#education,
+.right-group {
+  flex: 1;
+}
+
+#education {
+  flex: 1;
+}
+
 #skills {
-  width: 35%;
+  flex: 2;
 }
 
 @media (max-width: 768px) {
