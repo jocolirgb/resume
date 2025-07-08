@@ -23,6 +23,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  margin-bottom: 1rem;
+}
+
 a {
   color: var(--text-primary);
   text-decoration: none;
@@ -30,6 +34,7 @@ a {
 
 ul {
   list-style-type: none;
+  margin-top: 1rem;
 }
 
 ul li {
@@ -43,12 +48,11 @@ ul li {
 }
 
 .icons {
-  width: 1.25rem;
+  width: 1rem;
 }
 
 #contact {
   width: 35%;
-  padding: 0.25rem 0.1rem;
 }
 
 #profile {
@@ -79,12 +83,49 @@ ul li {
   flex-direction: row;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .stretch {
   align-items: stretch;
 }
 
+.card h2,
+.card ul,
+.card p {
+  padding-left: 2rem;
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  padding: 0rem 2rem;
+}
+
+.card p {
+  text-align: justify;
+  padding: 0 2rem;
+}
+
 .gap {
   gap: 1rem;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-hover:hover {
+  color: var(--text-secondary);
+}
+
+#professional {
+  flex: 2;
+}
+
+#education,
+#skills {
+  width: 35%;
 }
 
 @media (max-width: 768px) {
@@ -96,6 +137,10 @@ ul li {
     margin: 1rem auto;
     font-size: clamp(0.875rem, 2vw, 1rem);
     overflow-wrap: anywhere;
+  }
+  .card h2 {
+    text-align: center;
+    padding-left: 0;
   }
   .card {
     padding: 2px 4px;
