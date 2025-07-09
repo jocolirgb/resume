@@ -16,7 +16,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-primary);
   margin: 2rem auto;
-  width: 60%;
+  width: 75%;
 }
 
 h1 {
@@ -133,6 +133,14 @@ ul li {
 
 #education {
   flex: 1;
+}
+
+#education .icon-row {
+  padding-left: 2rem;
+}
+
+#education .icon-row:last-child {
+  padding-bottom: 2rem;
 }
 
 #skills {
