@@ -123,6 +123,10 @@ ul li {
   flex: 2;
 }
 
+#professional .icon-row {
+  padding-left: 2rem;
+}
+
 .right-group {
   flex: 1;
 }
